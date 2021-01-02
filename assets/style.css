@@ -2,6 +2,11 @@
 
 :root {
     --default-bg-color: #000;
+    --hungarian-flag-red: #f00;
+    --hungarian-flag-white: #fff;
+    --hungarian-flag-green: #0f0;
+    --default-border-color: rgb(150,150,150);
+    --default-box-bg-color: rgba(236,236,236,.75);
 }
 
 html {
@@ -9,6 +14,7 @@ html {
 }
 
 body {
+    background-color: var(--default-bg-color);
     margin: 0;
     padding: 0;
     position: absolute;
@@ -22,3 +28,33 @@ body {
     box-sizing: border-box;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stripe {
+    height: 20px;
+}
+
+.stripe--red {
+    background-color: var(--hungarian-flag-red);
+}
+
+.stripe--white {
+    background-color: var(--hungarian-flag-white);
+}
+
+.stripe--green {
+    background-color: var(--hungarian-flag-green);
+}
