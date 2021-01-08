@@ -22,6 +22,8 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 * {
@@ -29,6 +31,7 @@ body {
 }
 
 .header {
+    height: 9vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,13 +41,13 @@ body {
 .flag {
     display:flex;
     flex-direction: column;
-    width: 33%;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .stripe {
-    height: 20px;
+    height: 3vh;
 }
 
 .stripe--red {
